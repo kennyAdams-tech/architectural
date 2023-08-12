@@ -1,0 +1,1252 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+/* UNIVERSAL */
+
+.container{
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+}
+
+
+header{
+  background-color: rgb(255, 255, 255);
+  box-shadow: 10px  5px 10px  rgb(236, 235, 235, 0.7);
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  align-items: center;
+ padding: 20px 0;
+ letter-spacing: 4px;
+}
+
+header #logo {
+    float: left;
+}
+
+header #logo nav{
+   
+}
+
+header #logo a{
+    text-decoration: none;
+    color: black;
+}
+
+header #logo a h1{
+    margin: 0;
+    font-weight: lighter;
+}
+
+header #logo a h1 span{
+    font-weight: bold;
+    padding-right: 5px;
+}
+
+
+ nav{
+  padding-top: 5px;
+}
+
+
+header nav ul{
+  float: right;
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header nav ul li{
+    padding-left: 50px;
+   
+}
+
+header nav ul li a{
+   text-decoration: none;
+   color: black;
+   font-size: 25px;
+}
+
+
+/* SECTION 1 */
+
+#background{
+    min-height: 700px;
+    text-align: center;
+ 
+    
+ 
+   background: url("./images/architect.jpg") 0px -100px;
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+  
+}
+
+#background h1{
+   position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    margin-top: 25px;
+    color: white;
+    font-weight: lighter;
+   letter-spacing: 3px;
+}
+
+#background h1 span{
+    font-weight: bolder;
+    font-size: 50px;
+    padding: 8px 17px;
+    background-color: rgb(0, 0, 0, 0.6);
+}
+
+/* SECTION 2 */
+
+
+#projects{
+    padding-top: 40px;
+    border-bottom: 1px solid rgb(0, 0, 0, 0.2);
+}
+
+#projects h1{
+    font-weight: lighter;
+}
+
+
+
+/* SECTION 3 */
+
+.flex-img [class*="col-"]{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 15px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+[class*="text-img"] h1{
+    position: absolute;
+    background-color: black;
+    color: white;
+    margin-top: -0.2px;
+    font-weight: lighter;
+    padding: 7px 14px;
+    font-weight: lighter;
+    font-size: large;
+ }
+
+#About h1 {
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgb(0, 0, 0, 0.1);
+}
+
+#About p {
+  line-height: 25px;
+  font-weight: lighter;
+  
+}
+
+#developer{
+   justify-content: space-between;
+}
+
+.developer-flex  [class*="developer-img"]{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 30px;
+}
+
+.developer-flex  [class*="developer-img"] h1{
+   font-weight: lighter;
+}
+
+.developer-flex  [class*="developer-img"] p{
+   padding-right: 220px;
+   line-height: 25px;
+ }
+
+ .developer-flex  [class*="developer-img"] button{
+    padding: 5px 225px;
+    text-align: center;
+    font-size: large;
+    font-weight: lighter;
+    cursor: pointer;
+    outline: none;
+  }
+
+
+  #Contact{
+
+  }
+
+  #Contact h1{
+    font-weight: lighter;
+    border-bottom: 0.5px solid rgb(0, 0, 0, 0.1);
+    padding-bottom: 15px;
+}
+
+
+form input{
+    width: 99%;
+    padding: 5px 0;
+    padding-left: 8px;
+    margin-bottom: 10px;
+}
+
+form textarea{
+    width: 99.2%;
+    padding: 5px 0;
+    padding-left: 8px;
+    margin-bottom: 15px;
+}
+
+form button{
+    color: white;
+    background-color: black;
+    margin-bottom: 30px;
+    padding: 8px 14px;
+    outline: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+#map{
+    margin-bottom: 10px;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: rgb(0, 0, 0, 0.4);
+    color: white;
+    padding-bottom: 100px;
+    padding-top: 12px;
+}
+
+footer h2 {
+    text-align: center;
+    font-weight: lighter;
+    margin-top: 40px;
+}
+
+footer .footer-nav{
+    text-align: center;
+    margin-bottom: 70px;
+    margin-top: 40px;
+}
+
+footer .footer-nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+
+footer .footer-nav ul a{
+   text-decoration: none;
+   color: white;
+}
+
+.social-icons{
+    float: right;
+   
+}
+
+.social-icons img{
+   
+    padding-right: 15px;
+}
+
+.top{
+    margin-top: 200px;
+}
+
+.top span{
+    background-color: rgb(255, 255, 255, 0.4);
+    padding: 15px 10px;
+   padding-top: 40px;
+   padding-bottom: 7px;
+}
+
+/* .top span:hover{
+    background-color: blue;
+    padding: 15px 10px;
+   padding-top: 40px;
+   padding-bottom: 7px;
+} */
+
+.top span a img{
+    width: 45px;
+    height: 45px;
+
+}
+
+
+
+
+/* LAPTOP */
+@media (min-width:769px) and (max-width:1024px){
+ 
+      
+      header #logo {
+          float: left;
+      }
+      
+      header #logo nav{
+         
+      }
+      
+      header #logo a{
+          text-decoration: none;
+          color: black;
+      }
+      
+      header #logo a h1{
+          margin: 0;
+          font-weight: lighter;
+          font-size: 24px;
+      }
+      
+      header #logo a h1 span{
+          font-weight: bold;
+          padding-right: 5px;
+      }
+      
+      
+       nav{
+        padding-top: 3px;
+      }
+      
+      
+      header nav ul{
+        float: right;
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      
+      header nav ul li{
+          padding-left: 27px;
+         
+      }
+      
+      header nav ul li a{
+         text-decoration: none;
+         color: black;
+         font-size: 20px;
+      }
+
+    #background{
+        min-height: 650px;
+        text-align: center;
+       background: url("./images/architect.jpg") 0px -600px;
+       background-repeat: no-repeat;
+       background-position: center;
+       background-size: cover;
+      
+    }
+
+    #background h1{
+        position: absolute;
+         top: 20%;
+         left: 50%;
+         transform: translate(-50%, -50%);
+         font-size: 30px;
+         margin-top: 0px;
+         color: white;
+         font-weight: lighter;
+        letter-spacing: 3px;
+
+     }
+
+     #background h1 span{
+        font-weight: bolder;
+        font-size: 40px;
+        padding: 6px 14px;
+        background-color: rgb(0, 0, 0, 0.6);
+    }
+
+    #projects{
+        padding-top: 35px;
+        border-bottom: 0.5px solid rgb(0, 0, 0, 0.1);
+    }
+    
+    #projects h1{
+        font-weight: bold;
+        font-size: 24px;
+    }
+
+    .flex-img [class*="col-"]{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        padding-bottom: 12px;
+        text-align: center;
+        padding-top: 35px;
+    }
+    
+    [class*="text-img"] h1{
+        position: absolute;
+        background-color: black;
+        color: white;
+        margin-top: -0.2px;
+        font-weight: lighter;
+        padding: 10px 15px;
+        font-weight: lighter;
+        font-size: 25px;
+     }
+
+     [class*="text-img"] img{
+        width: 400px;
+        height: 300px;
+        margin-bottom: -30px;
+     }
+
+     #About h1 {
+         margin-top: 50px;
+         font-size: 24px;
+        padding-bottom: 25px;
+        border-bottom: 1px solid rgb(0, 0, 0, 0.1);
+    }
+    
+    #About p {
+      line-height: 25px;
+      font-weight: lighter;
+      margin-bottom: 100px;
+    }
+    #developer{
+       justify-content: space-between;
+    }
+    
+    .developer-flex  [class*="developer-img"]{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        padding-bottom: 30px;
+    }
+    
+    .developer-flex  [class*="developer-img"] h1{
+       font-weight: bold;
+       font-size: 20px;
+    }
+    
+    .developer-flex  [class*="developer-img"] p{
+       padding-right: 35px;
+       line-height: 23px;
+       font-size: 15px;
+       font-weight: lighter;
+     }
+    
+     .developer-flex  [class*="developer-img"] button{
+        padding: 5px 170px;
+        text-align: center;
+        font-size: large;
+        font-weight: lighter;
+        cursor: pointer;
+        outline: none;
+      }
+    
+      .developer-flex  [class*="developer-img"] img{
+        width: 410px;
+     
+      }
+
+      #Contact{
+
+    }
+  
+    #Contact h1{
+      font-weight: bold;
+      border-bottom: 0.5px solid rgb(0, 0, 0, 0.1);
+      padding-bottom: 15px;
+      margin-top: 40px;
+      font-size: 24px;
+  }
+  
+  #Contact form input::placeholder{
+      font-size: 18px;
+  }
+
+  #Contact form textarea::placeholder{
+    font-size: 18px;
+}
+
+  form input{
+      width: 97%;
+      padding: 7px 0;
+      padding-left: 8px;
+      margin-bottom: 20px;
+  }
+  
+  form textarea{
+      width: 97%;
+      padding: 4px 0;
+      padding-left: 8px;
+      margin-bottom: 24px;
+      padding-bottom: 16px;
+  }
+  
+  form button{
+      color: white;
+      background-color: black;
+      margin-bottom: 30px;
+      padding: 13px 14px;
+      outline: none;
+      cursor: pointer;
+      text-align: center;
+  }
+
+  #map{
+    margin-bottom: 4px;
+}
+
+#map img{
+    width: 850px;
+    height: 450px;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: rgb(0, 0, 0, 0.4);
+    color: white;
+    padding-bottom:40px;
+    padding-top: 12px;
+}
+
+footer h2 {
+    text-align: center;
+    font-weight: lighter;
+    margin-top: 40px;
+}
+
+footer .footer-nav{
+    text-align: center;
+    margin-bottom: 70px;
+    margin-top: 40px;
+}
+
+footer .footer-nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+
+footer .footer-nav ul a{
+   text-decoration: none;
+   color: white;
+   font-size: 20px;
+}
+
+.social-icons{
+    float: right;
+   
+}
+
+.social-icons img{
+   
+    padding-right: 15px;
+}
+
+.top{
+    margin-top: 200px;
+}
+
+.top span{
+    background-color: rgb(255, 255, 255, 0.4);
+    padding: 15px 10px;
+   padding-top: 40px;
+   padding-bottom: 7px;
+}
+
+.top span a img{
+    width: 43px;
+    height: 43px;
+
+}
+
+}
+
+
+
+
+/* TABLET  */
+@media (min-width:481px) and (max-width:768px){
+
+    header #logo {
+        float: left;
+    }
+    
+    header #logo nav{
+       
+    }
+    
+    header #logo a{
+        text-decoration: none;
+        color: black;
+    }
+    
+    header #logo a h1{
+        margin: 0;
+        font-weight: lighter;
+        font-size: 20px;
+    }
+    
+    header #logo a h1 span{
+        font-weight: bold;
+        padding-right: 3px;
+    }
+    
+    
+     nav{
+      padding-top: 3px;
+    }
+    
+    
+    header nav ul{
+      float: right;
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    
+    header nav ul li{
+        padding-left: 7px;
+       
+    }
+    
+    header nav ul li a{
+       text-decoration: none;
+       color: black;
+       font-size: 15px;
+       letter-spacing: 2px;
+    }
+
+  #background{
+      min-height: 450px;
+      text-align: center;
+     background: url("./images/architect.jpg") 0px -400px;
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: cover;
+    
+  }
+
+  #background h1{
+      position: absolute;
+       top: 30%;
+       left: 50%;
+       transform: translate(-50%, -50%);
+       font-size: 30px;
+       margin-top: 0px;
+       color: white;
+       font-weight: lighter;
+      letter-spacing: 2px;
+
+   }
+
+   #background h1 span{
+      font-weight: bolder;
+      font-size: 29px;
+      padding: 6px 14px;
+      background-color: rgb(0, 0, 0, 0.6);
+  }
+
+  #projects{
+      padding-top: 35px;
+      border-bottom: 0.5px solid rgb(0, 0, 0, 0.1);
+  }
+  
+  #projects h1{
+      font-weight: lighter;
+      font-size: 22px;
+  }
+
+  .flex-img [class*="col-"]{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
+      padding-bottom: 12px;
+      text-align: center;
+      padding-top: 35px;
+  }
+  
+  [class*="text-img"] h1{
+      position: absolute;
+      background-color: black;
+      color: white;
+      margin-top: -0.2px;
+      font-weight: lighter;
+      padding: 8px 12px;
+      font-weight: lighter;
+      font-size: 15px;
+   }
+
+   [class*="text-img"] img{
+      width: 270px;
+      height: 180px;
+      margin-bottom: -40px;
+   }
+
+   #About h1 {
+       margin-top: 50px;
+       font-size: 20px;
+      padding-bottom: 25px;
+      border-bottom: 1px solid rgb(0, 0, 0, 0.1);
+  }
+  
+  #About p {
+    line-height: 20px;
+    font-weight: lighter;
+    margin-bottom: 40px;
+    font-size: 15px;
+  }
+  #developer{
+     justify-content: space-between;
+  }
+  
+  .developer-flex  [class*="developer-img"]{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-evenly;
+      padding-bottom: 30px;
+  }
+  
+  .developer-flex  [class*="developer-img"] h1{
+     font-weight: lighter;
+     font-size: 17px;
+  }
+  
+  .developer-flex  [class*="developer-img"] p{
+     padding-right: 35px;
+     line-height: 18px;
+     font-size: 13px;
+   }
+  
+   .developer-flex  [class*="developer-img"] button{
+      padding: 5px 110px;
+      text-align: center;
+      font-size: large;
+      font-weight: lighter;
+      cursor: pointer;
+      outline: none;
+    }
+  
+    .developer-flex  [class*="developer-img"] img{
+      width: 287px;
+   
+    }
+
+    #Contact{
+
+  }
+
+  #Contact h1{
+    font-weight: lighter;
+    border-bottom: 0.5px solid rgb(0, 0, 0, 0.1);
+    padding-bottom: 15px;
+    margin-top: 40px;
+    font-size: 20px;
+}
+
+
+#Contact p{
+    font-size: 15px;
+}
+
+form input{
+    width: 95%;
+    padding: 6px 0;
+    padding-left: 8px;
+    margin-bottom: 10px;
+}
+
+form textarea{
+    width: 95.6%;
+    padding: 6px 0;
+    padding-left: 8px;
+    margin-bottom: 17px;
+}
+
+form button{
+    color: white;
+    background-color: black;
+    margin-bottom: 30px;
+    padding: 6px 10px;
+    outline: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+#map{
+  margin-bottom: 4px;
+}
+
+#map img{
+  width: 600px;
+  height: 300px;
+}
+
+/* FOOTER */
+
+footer {
+  background-color: rgb(0, 0, 0, 0.4);
+  color: white;
+  padding-bottom:15px;
+  padding-top: 9px;
+}
+
+footer h2 {
+  text-align: center;
+  font-weight: lighter;
+  margin-top: 40px;
+  font-size: 20px;
+}
+
+footer .footer-nav{
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 30px;
+}
+
+footer .footer-nav ul{
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+}
+
+
+footer .footer-nav ul a{
+ text-decoration: none;
+ color: white;
+ font-size: 13px;
+}
+
+.social-icons{
+padding-right: 130px;
+ 
+}
+
+.social-icons img{
+   width: 40px;
+  padding-right: 15px;
+}
+
+.top{
+  margin-top: 100px;
+}
+
+.top span{
+  background-color: rgb(255, 255, 255, 0.4);
+  padding: 15px 10px;
+ padding-top: 24px;
+ padding-bottom: 2px;
+}
+
+.top span a img{
+  width: 35px;
+  height: 35px;
+
+}
+
+}
+
+
+
+/* Mobile  */
+@media (min-width:320px) and (max-width:480px){
+
+    .container{
+        width: 80%;
+        margin: auto;
+        overflow: hidden;
+    }
+    
+    header{
+      background-color: white;
+      position: fixed;
+      z-index: 999;
+      width: 100%;
+      align-items: center;
+     padding: 12px 0;
+     letter-spacing: 3px;
+    }
+    
+    header #logo {
+        float: left;
+        font-size: 15px;
+        padding-top: 7px;
+    }
+    
+    header #logo nav{
+        
+    }
+    
+    header #logo a{
+        text-decoration: none;
+        color: black;
+    }
+    
+    header #logo a h1{
+        margin: 0;
+        font-weight: lighter;
+    }
+    
+    header #logo a h1 span{
+        font-weight: bold;
+        padding-right: 5px;
+    }
+    
+    
+     nav{
+      padding-top: 15px;
+      display: none;
+    }
+    
+    
+    header nav ul{
+      float: right;
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    
+    header nav ul li{
+        padding-left: 30px;
+       
+    }
+    
+    header nav ul li a{
+       text-decoration: none;
+       color: black;
+       font-size: 23px;
+    }
+    
+    #background{
+        min-height: 300px;
+        text-align: center;
+       background: url("./images/architect.jpg") 0px -300px;
+       background-repeat: no-repeat;
+       background-position: center;
+       background-size: cover;
+      
+    }
+
+    #background h1{
+        position: absolute;
+         top: 69%;
+         left: 50%;
+         transform: translate(-50%, -50%);
+         font-size: 25px;
+        
+         color: white;
+         font-weight: lighter;
+        letter-spacing: 2px;
+        padding-bottom: 180%;
+     }
+
+     #background h1 span{
+        font-weight: bolder;
+        font-size: 25px;
+        padding: 5px 12px;
+        background-color: rgb(0, 0, 0, 0.6);
+    }
+
+    #projects{
+        padding-top: 60px;
+        border-bottom: 1px solid rgb(0, 0, 0, 0.2);
+        margin-bottom: 50px;
+       
+    }
+    
+    #projects h1{
+        font-weight: lighter;
+        font-size: 30px;
+    }
+
+    
+        .flex-img [class*="col-"]{
+            display: inline;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 80px;
+            text-align: center;
+            padding-top: 35px;
+            margin-top: -810px;
+        }
+
+        .text-img1 img{
+            padding-bottom: 40px;
+         
+        }
+
+        .text-img2 img{
+            padding-bottom: 40px;
+        }
+
+        .text-img3 img{
+            padding-bottom: 40px;
+        }
+        .text-img4 img{
+            padding-bottom: 40px;
+        }
+
+        .text-img5 img{
+            padding-bottom: 40px;
+        }
+
+        .text-img6 img{
+            padding-bottom: 40px;
+        }
+
+        .text-img7 img{
+            padding-bottom: 40px;
+        }
+
+        .text-img8 img{
+            padding-bottom: 40px;
+        }
+
+    [class*="text-img"] h1{
+        /* display: none; */
+        position: absolute;
+        background-color: black;
+        color: white;
+        margin-top: 10px;
+        font-weight: lighter;
+        padding: 10px 20px;
+        font-weight: lighter;
+        font-size: 20px;
+        margin-left: 2.5px;
+        
+     }
+
+     [class*="text-img"] img{
+        width: 99%;
+        height: 250px;
+        margin-top: 10px;
+      
+     }
+
+     #About h1 {
+         margin-top: 60px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid rgb(0, 0, 0, 0.3);
+        font-size: 30px;
+        font-weight: lighter;
+    }
+    
+    #About p {
+      line-height: 23px;
+      font-weight: lighter;
+      margin-bottom: 70px;
+      font-size:  18px;
+    }
+
+
+    #developer{
+        justify-content: center;
+        align-items: center;
+      
+     }
+     
+     .developer-flex  [class*="developer-img"]{
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: space-evenly;
+         padding-bottom: 23px;
+        
+     }
+     
+     .developer-flex  [class*="developer-img"] h1{
+        font-weight: bold;
+       font-size: 25px;
+       /* margin-left: 18px;
+       margin-right: 18px; */
+     }
+     
+     .developer-flex  [class*="developer-img"] p{
+        padding-right: 25px;
+        line-height: 25px;
+        font-size: 18px;
+        font-weight: lighter;
+        width: 95%;
+        /* padding-left: 18px;
+        margin-right: 18px; */
+      }
+     
+      .developer-flex  [class*="developer-img"] button{
+         padding: 7px 19px;
+         text-align: center;
+         font-size: 18px;
+         font-weight: lighter;
+         cursor: pointer;
+         outline: none;
+         width: 98%;
+         margin-bottom: 70px;
+
+       }
+     
+       .developer-flex  [class*="developer-img"] img{
+         width: 98%;
+         height: 210px;
+       }
+    
+    
+
+      #Contact{
+
+    }
+  
+    #Contact h1{
+      font-weight: bold;
+      border-bottom: 1px solid rgb(0, 0, 0, 0.3);
+      padding-bottom: 25px;
+      margin-top: 20px;
+      font-size: 30px;
+  }
+  
+
+  #Contact p{
+   line-height: 30px;
+    font-size: 20px;
+    font-weight: lighter;
+}
+  
+  form input{
+      width: 90%;
+      padding: 10px 0;
+      padding-left: 13px;
+      margin-bottom: 25px;
+      font-size: 20px;
+      font-weight: lighter;
+  }
+
+  form textarea{
+    width: 90%;
+    padding: 10px 0;
+    padding-left: 13px;
+    margin-bottom: 25px;
+    font-size: 20px;
+    font-weight: lighter;
+}
+  
+ 
+  form button{
+      color: white;
+      background-color: rgb(0, 0, 0, 0.7);
+      margin-bottom: 28px;
+      padding: 15px 20px;
+      outline: none;
+      cursor: pointer;
+      text-align: center;
+      font-size: 15px;
+     
+  }
+
+  #map{
+    margin-bottom: 20px;
+}
+
+#map img{
+    width: 100%;
+    height: 200px;
+}
+
+
+
+footer {
+    background-color: rgb(0, 0, 0, 0.4);
+    color: white;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    justify-content: center;
+    align-items: center;
+}
+
+footer h2 {
+    text-align: center;
+    font-weight: lighter;
+    margin-top: 28px;
+    font-size: 20px;
+}
+
+footer .footer-nav{
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 28px;
+    font-size: 10px;
+  
+}
+
+footer .footer-nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+     padding: 0 3px; 
+}
+
+
+footer .footer-nav ul a{
+   text-decoration: none;
+   color: white;
+    
+}
+
+
+.social-icons{
+   align-items: center;
+   justify-content: center;
+   justify-items: center;
+   margin-right: 25px;
+}
+
+.social-icons img{
+   width: 23px;
+    padding-right: 15px;
+   
+}
+
+.top{
+    margin-top: 70px;
+}
+
+.top span{
+    background-color: rgb(255, 255, 255, 0.4);
+    padding: 9px 5px;
+   padding-top: 15px;
+   padding-bottom: 0.1px;
+}
+
+
+
+.top span a img{
+    width: 24px;
+    height: 24px;
+
+}
+
+}
+
